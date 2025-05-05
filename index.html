@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>✔️ Minhas Tarefas Diárias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="wrapper">
+    <h1 class="titulo-principal">📝 Lista de Tarefas</h1>
+    
+    <div class="adicionar-tarefa">
+      <input 
+        type="text" 
+        id="novaTarefa" 
+        class="campo-tarefa" 
+        placeholder="O que precisa fazer hoje?"
+        autofocus
+      >
+      <button id="btnAdicionar" class="botao-adicionar">
+        <span>+</span>
+      </button>
+    </div>
+    
+    <div id="listaVazia" class="aviso-lista-vazia">
+      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076478.png" width="80" alt="">
+      <p>Nada por aqui ainda...</p>
+      <small>Adicione sua primeira tarefa</small>
+    </div>
+    
+    <ul id="listaTarefas" class="lista-tarefas"></ul>
+    
+    <footer class="rodape">
+      <small>Tarefas salvas automaticamente</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
